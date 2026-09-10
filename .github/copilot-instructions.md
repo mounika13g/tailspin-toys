@@ -14,6 +14,12 @@ This is a crowdfunding platform for games with a developer theme. The applicatio
 
 ## Code standards
 
+The shared commenting and TypeScript conventions are documented in [`instructions/coding-standards.instructions.md`](instructions/coding-standards.instructions.md). Follow it together with the technology-specific instruction files:
+
+- Comment intent and decisions, not mechanics or code that is already self-explanatory.
+- Add TSDoc/JSDoc to every exported function in `db/` and `src/lib/`, including `@param` and `@returns` documentation.
+- Keep an accurate, documented `Props` interface in every reusable `.astro` component.
+
 ### Required Before Each Commit
 
 #### Testing guidelines
