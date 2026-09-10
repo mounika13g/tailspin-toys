@@ -7,6 +7,8 @@ applyTo: 'db/**/*.ts,src/lib/*.ts'
 
 The app's data lives in a local SQLite database accessed through **Drizzle ORM** over Node.js's built-in `node:sqlite` driver. It is consumed at **build time** from Astro page frontmatter — there is no runtime API server. Schema changes are managed with **drizzle-kit** migrations.
 
+Follow [`coding-standards.instructions.md`](coding-standards.instructions.md) for the shared comment philosophy and TSDoc requirements. Every exported function in `db/` and `src/lib/` needs a TSDoc/JSDoc comment with its purpose, `@param` entries (including the injectable `db` argument), and an `@returns` entry.
+
 ## Layout
 
 - `db/schema.ts` — Drizzle table definitions (`publishers`, `categories`, `games`) and inferred row types. The single source of truth for the schema.

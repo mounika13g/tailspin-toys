@@ -5,6 +5,8 @@ applyTo: '**/*.astro'
 
 # Astro Component Instructions
 
+Follow [`coding-standards.instructions.md`](coding-standards.instructions.md) for commenting and TypeScript formatting. Every reusable component must define an accurate `Props` interface in frontmatter; document non-obvious props and explain component decisions with comments about intent rather than comments that restate markup.
+
 ## Astro Component Patterns
 
 Astro handles everything in the UI: pages, layouts, components, routing, and content. The site is **fully prerendered** (`output: 'static'`) — there is no client-side UI framework and no separate API server. Pages read data **directly in frontmatter** at build time via the Drizzle/Node SQLite data-access helpers in `src/lib/`.
